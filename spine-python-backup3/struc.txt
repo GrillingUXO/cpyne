@@ -1,0 +1,21 @@
+spine-python/
+├── setup.py
+├── manual_binding.h   
+├── pyproject.toml                
+├── setup.py            
+├── README.md
+├── LICENSE  
+│
+├── src/
+│   ├── spine-c/   
+│   │   ├── CMakeLists.txt
+│   │   ├── src/———— c*
+│   │   └── include/———— spine/ ———— h*
+│   └── cpyne/    
+│   │   ├── spine_bindings.py
+│   │   ├── __init__.py
+│   │   
+│   └── build/    
+│   │   ├── build/
+│   │   ├── temp.macosx-10.9-x86_64-3.9/ ———— libspine.dylib
+│   │   
