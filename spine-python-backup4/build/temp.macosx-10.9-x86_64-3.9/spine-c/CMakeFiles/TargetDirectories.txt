@@ -1,0 +1,3 @@
+/Users/michelleyan/Downloads/sp/spine-python/build/temp.macosx-10.9-x86_64-3.9/spine-c/CMakeFiles/spine_c.dir
+/Users/michelleyan/Downloads/sp/spine-python/build/temp.macosx-10.9-x86_64-3.9/spine-c/CMakeFiles/edit_cache.dir
+/Users/michelleyan/Downloads/sp/spine-python/build/temp.macosx-10.9-x86_64-3.9/spine-c/CMakeFiles/rebuild_cache.dir

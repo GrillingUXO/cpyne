@@ -1,0 +1,44 @@
+spine-python/
+├── setup.py
+├── manual_binding.h   
+├── pyproject.toml                
+├── setup.py            
+├── README.md
+├── LICENSE  
+│
+├── src/
+│   ├── spine-c/   
+│   │   ├── CMakeLists.txt
+│   │   ├── src/———— c*
+│   │   └── include/———— spine/ ———— h*
+│   └── cpyne/    
+│   │   ├── spine_bindings.py
+│   │   ├── __init__.py
+│   │   
+│   └── build/    
+│   │   ├── build/
+
+
+
+
+===========================
+
+ctypesgen \
+  manual_binding.h \
+  -I src/spine-c/include/spine \
+  -L src/cpyne \
+  -lspine \
+  -o src/cpyne/spine_bindings.py
+
+
+
+rm -rf build/ dist/ src/cpyne/libspine.dylib
+
+python setup.py build_ext --force
+
+pip install . --force-reinstall
+
+python3 -m build
+
+twine upload dist/*
+
